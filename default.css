@@ -16,7 +16,7 @@ body{
     margin: 0;
 }
 body *{
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
@@ -244,8 +244,11 @@ h4:hover{
 }
 #skills{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: var(--previewShadow);
+}
+#left{
+    transform: translateX(-28px);
 }
 .social-links{
     display: grid;
@@ -333,6 +336,9 @@ h4:hover{
     }
 }
 @media screen and (max-width: 800px){
+    #preview-shadow{
+        transform: translateX(-36px);
+    }
     .intro-wrapper{
     grid-template-columns: 1fr;
     grid-template-areas: 
