@@ -340,7 +340,7 @@ h4:hover{
 }
 @media screen and (max-width: 800px){
     #preview-shadow{
-        transform: translateX(-36px);
+        transform: translateX(-20px);
     }
     .intro-wrapper{
     grid-template-columns: 1fr;
