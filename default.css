@@ -39,7 +39,9 @@ ul {
     list-style: none;
 }
 
-h1 {font-size: 51px;}
+h1 {font-size: 51px;
+    animation-name: moveFromTop;
+    animation-duration: 2.5s;}
 h2 {font-size: 36px;}
 h3 {font-size: 28px;}
 h4 {font-size: 24px;}
@@ -62,6 +64,7 @@ h6 {font-size: 16px;}
     width: 1200px;
     margin: 0 auto;
 }
+
 h1:hover{
     transform: translateX(4px) skewX(10deg);
 }
@@ -349,5 +352,15 @@ h4:hover{
     }
     .right-column{
         justify-content: center;
+    }
+}
+@keyframes moveFromTop{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
     }
 }
