@@ -8,6 +8,7 @@
     --previewBg: rgb(251, 249, 243, 0.8);
     --previewShadow: #e9e1c6;
     --buttoncolor: black;
+    --shadowColor: rgba(0, 0, 0, 0.75);
 }
 
 html,
@@ -88,7 +89,7 @@ h4:hover{
     background-color: var(--sceondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0 ;
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px var(--shadowColor);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -136,7 +137,7 @@ h4:hover{
     width: 15px;
     border-radius: 50%;
     margin: 5px;
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px var(--shadowColor);
 }
 .left-column{
     grid-area: left-column;
@@ -148,7 +149,7 @@ h4:hover{
     margin: 0 auto;
     height: 220px;
     width: 220px;
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -2px 8px 21px -5px var(--shadowColor);
     border-radius: 4%;
     object-fit: cover;
     border: 2px solid var(--borderColor);
@@ -168,7 +169,7 @@ h4:hover{
     border-radius: 50%;
     margin: 5px;
     border: 2px solid var(--themeDotBorder);
-    box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 3px -1px var(--shadowColor);
     cursor: pointer;
 }
 .theme-dot:hover{
@@ -209,7 +210,7 @@ h4:hover{
 #preview{
     width: 300px;
     border: 1.5px solid #17a2b8;
-    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 21px -9px var(--shadowColor);
     background-color: var(--previewBg);
     padding: 15px;
     position: relative;
@@ -276,7 +277,7 @@ h4:hover{
 }
 .post{
     border: 1px solid var(--borderColor);
-    box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+    box-shadow: -2px 7px 21px -9px var(--shadowColor);
 }
 .thumbnail{
     display: block;
